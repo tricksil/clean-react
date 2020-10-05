@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWithNoTests",
+    "test:watch": "yarn jest -- --watch",
+    "test:staged": "yarn jest -- --findRelatedTests",
+    "test:ci": "yarn jest -- --coverage"
   },
   "author": "Patrick Silva <patrickeeep12@gmail.com>",
   "license": "MIT",
