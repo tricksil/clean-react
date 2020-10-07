@@ -5,16 +5,19 @@
     }
   },
   "extends": [
-    "standard-with-typescript", 
-    "plugin:react/recommended"
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
-  "plugins": ["react"],
+  "plugins": ["react", "prettier"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
+    "prettier/prettier": "error",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error"
   }
