@@ -9,21 +9,20 @@ import {
   Input,
 } from '@/presentation/components';
 
-type StateProps = {
-  isLoading: boolean;
-  errorMessage: String;
-};
-
 const Login: React.FC = () => {
-  const [state] = useState<StateProps>({
+  const [state] = useState({
     isLoading: false,
+  });
+  const [errorState] = useState({
+    email: 'Campo obrigatório',
+    password: 'Campo obrigatório',
     errorMessage: '',
   });
 
   return (
     <div className={Styles.login}>
       <LoginHeader />
-      <Context.Provider value={state}>
+      <Context.Provider value={{ state, errorState }}>
         <form className={Styles.form}>
           <h2>Login</h2>
           <Input type="email" name="email" placeholder="Digite seu e-mail" />
