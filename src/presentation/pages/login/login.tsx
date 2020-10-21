@@ -16,7 +16,7 @@ const Login: React.FC = () => {
   const [errorState] = useState({
     email: 'Campo obrigatório',
     password: 'Campo obrigatório',
-    errorMessage: '',
+    main: '',
   });
 
   return (
