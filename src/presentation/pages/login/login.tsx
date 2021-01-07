@@ -10,7 +10,7 @@ import {
   LoginHeader,
   Input,
 } from '@/presentation/components';
-import { Validation } from '@/presentation/protocols/validation';
+import { Validation } from '@/presentation/protocols';
 import { Authentication } from '@/domain/usecases';
 
 type Props = {
