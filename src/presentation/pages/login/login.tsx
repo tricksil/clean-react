@@ -84,7 +84,6 @@ const Login: React.FC<Props> = ({ validation, authentication }: Props) => {
           <Link data-testid="signup" to="/signup" className={Styles.link}>
             Criar conta
           </Link>
-          <span className={Styles.link}>criar conta</span>
           <FormStatus />
         </form>
       </Context.Provider>
